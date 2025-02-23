@@ -1,0 +1,27 @@
+/* Default Light Mode */
+:root {
+  --background: #ffffff;
+  --foreground: #011638;
+  --button-bg: #f0f0f0;
+  --button-text: #011638;
+}
+
+/* Dark Mode */
+.dark {
+  --background: #011638;
+  --foreground: #ffffff;
+  --button-bg: #222b45;
+  --button-text: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode toggle button */
+button.dark-mode-toggle {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}
